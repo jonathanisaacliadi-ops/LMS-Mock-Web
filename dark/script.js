@@ -329,11 +329,12 @@ function showNotify(msg) {
 renderQuiz();
 renderSurvey();
 
-// Comment box stops the timer (completes the timed task).
+// Once the reader reaches the comment box (which stops the timer on focus),
+// the COMMENT button stays active — no minimum word count is required, so an
+// accidental keystroke or an empty box still lets them continue.
 document.getElementById('commentInput')
     .addEventListener('input', function () {
-        const words = this.value.trim().split(/\s+/).filter(w => w.length > 0);
-        document.getElementById('commentBtn').classList.toggle('ready', words.length >= 5);
+        document.getElementById('commentBtn').classList.add('ready');
     });
 
 // Submitting the comment advances to the reading quiz.

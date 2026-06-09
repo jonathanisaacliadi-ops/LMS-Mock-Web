@@ -177,13 +177,13 @@
   .timer-status { font-size: 11px; color: #aaa; }
 
   /* === NOTIFICATION === */
-  /* .notify-toast {
+  .notify-toast {
     position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%);
     background: #2e7d32; color: #fff; border-radius: 8px; padding: 12px 22px;
     font-size: 13px; z-index: 1000; box-shadow: 0 4px 16px rgba(0,0,0,0.2);
     display: none; align-items: center; gap: 8px;
   }
-  .notify-toast.show { display: flex; } */ 
+  .notify-toast.show { display: flex; }
 
   /* scrollbar */
   ::-webkit-scrollbar { width: 6px; }

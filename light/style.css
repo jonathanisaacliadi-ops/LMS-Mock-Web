@@ -188,3 +188,45 @@
   /* scrollbar */
   ::-webkit-scrollbar { width: 6px; }
   ::-webkit-scrollbar-thumb { background: #ccc; border-radius: 3px; }
+
+  /* === SURVEY / QUIZ PAGES === */
+  .survey-page { max-width: 840px; }
+  .survey-card { background: var(--white); border: 1px solid var(--border); border-radius: 8px; padding: 26px 28px; }
+  .survey-step { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--orange); font-weight: 700; margin-bottom: 8px; }
+  .survey-title { font-size: 20px; font-weight: 700; margin-bottom: 6px; color: var(--text-dark); }
+  .survey-desc { font-size: 13px; color: var(--text-med); line-height: 1.6; margin-bottom: 20px; }
+  .survey-questions { display: flex; flex-direction: column; }
+  .sq { padding: 16px 0; border-top: 1px solid var(--border); }
+  .sq:first-child { border-top: none; padding-top: 0; }
+  .sq-text { font-size: 13.5px; color: var(--text-dark); margin-bottom: 12px; line-height: 1.5; }
+  .sq-num { font-weight: 700; color: var(--orange); margin-right: 4px; }
+
+  /* True / False */
+  .tf-options { display: flex; gap: 12px; }
+  .tf-opt { cursor: pointer; }
+  .tf-opt input { position: absolute; opacity: 0; pointer-events: none; }
+  .tf-pill { display: inline-block; padding: 8px 22px; border: 1.5px solid var(--border); border-radius: 22px; font-size: 13px; color: var(--text-med); transition: all 0.15s; }
+  .tf-opt:hover .tf-pill { border-color: var(--orange); }
+  .tf-opt input:checked + .tf-pill { background: var(--orange); border-color: var(--orange); color: #fff; font-weight: 700; }
+
+  /* 1–10 scale */
+  .scale-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .scale-end { font-size: 11px; color: var(--text-light); white-space: nowrap; }
+  .scale-opts { display: flex; gap: 6px; flex-wrap: wrap; }
+  .scale-opt { cursor: pointer; }
+  .scale-opt input { position: absolute; opacity: 0; pointer-events: none; }
+  .scale-opt span { display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; border: 1.5px solid var(--border); border-radius: 6px; font-size: 13px; color: var(--text-med); transition: all 0.15s; }
+  .scale-opt:hover span { border-color: var(--orange); }
+  .scale-opt input:checked + span { background: var(--orange); border-color: var(--orange); color: #fff; font-weight: 700; }
+
+  .survey-warn { display: none; color: #e53935; font-size: 12px; margin-top: 14px; font-weight: 600; }
+  .survey-warn.show { display: block; }
+  .survey-actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 24px; }
+  .survey-btn { background: var(--orange); color: #fff; border: none; border-radius: 5px; padding: 10px 22px; font-size: 13px; font-weight: 700; cursor: pointer; transition: background 0.15s; }
+  .survey-btn:hover { background: var(--orange-dark); }
+  .survey-btn.ghost { background: transparent; color: var(--text-med); border: 1px solid var(--border); }
+  .survey-btn.ghost:hover { background: rgba(127,127,127,0.12); }
+  .survey-btn:disabled { opacity: 0.6; cursor: default; }
+
+  .thanks-card { text-align: center; padding: 50px 28px; }
+  .thanks-icon { width: 60px; height: 60px; margin: 0 auto 16px; border-radius: 50%; background: var(--orange); color: #fff; font-size: 30px; display: flex; align-items: center; justify-content: center; }

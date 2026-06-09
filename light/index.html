@@ -284,6 +284,78 @@
       </div>
     </div>
 
+    <!-- PAGE 3: READING QUIZ (True / False) -->
+    <div id="page3" class="page survey-page">
+      <div class="survey-card">
+        <div class="survey-step">Langkah 1 dari 4 · Kuis Bacaan</div>
+        <h2 class="survey-title">Kuis Benar / Salah</h2>
+        <p class="survey-desc">Berdasarkan bacaan pada forum, tentukan apakah setiap pernyataan
+          <strong>Benar (B)</strong> atau <strong>Salah (S)</strong>. Semua pernyataan wajib dijawab.</p>
+        <form id="quizForm" class="survey-questions"></form>
+        <div class="survey-warn" id="quizWarn">Mohon jawab semua pernyataan sebelum melanjutkan.</div>
+        <div class="survey-actions">
+          <button type="button" class="survey-btn" onclick="submitQuiz()">Lanjut ke Kuesioner ›</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 4: QUESTIONNAIRE — SECTION A -->
+    <div id="page4" class="page survey-page">
+      <div class="survey-card">
+        <div class="survey-step">Langkah 2 dari 4 · Kuesioner</div>
+        <h2 class="survey-title">Section A — Visual Comfort (CVS)</h2>
+        <p class="survey-desc">Rate each statement from <strong>1 (Strongly Disagree)</strong> to
+          <strong>10 (Strongly Agree)</strong>.</p>
+        <form id="formA" class="survey-questions"></form>
+        <div class="survey-warn" id="warnA">Please rate every statement before continuing.</div>
+        <div class="survey-actions">
+          <button type="button" class="survey-btn ghost" onclick="showSurveyPage('page3')">‹ Kembali</button>
+          <button type="button" class="survey-btn" onclick="nextSection('A')">Lanjut ›</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 5: QUESTIONNAIRE — SECTION B -->
+    <div id="page5" class="page survey-page">
+      <div class="survey-card">
+        <div class="survey-step">Langkah 3 dari 4 · Kuesioner</div>
+        <h2 class="survey-title">Section B — User Experience</h2>
+        <p class="survey-desc">Rate each statement from <strong>1 (Strongly Disagree)</strong> to
+          <strong>10 (Strongly Agree)</strong>.</p>
+        <form id="formB" class="survey-questions"></form>
+        <div class="survey-warn" id="warnB">Please rate every statement before continuing.</div>
+        <div class="survey-actions">
+          <button type="button" class="survey-btn ghost" onclick="showSurveyPage('page4')">‹ Kembali</button>
+          <button type="button" class="survey-btn" onclick="nextSection('B')">Lanjut ›</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 6: QUESTIONNAIRE — SECTION C -->
+    <div id="page6" class="page survey-page">
+      <div class="survey-card">
+        <div class="survey-step">Langkah 4 dari 4 · Kuesioner</div>
+        <h2 class="survey-title">Section C — Perceived Productivity</h2>
+        <p class="survey-desc">Rate each statement from <strong>1 (Strongly Disagree)</strong> to
+          <strong>10 (Strongly Agree)</strong>.</p>
+        <form id="formC" class="survey-questions"></form>
+        <div class="survey-warn" id="warnC">Please rate every statement before continuing.</div>
+        <div class="survey-actions">
+          <button type="button" class="survey-btn ghost" onclick="showSurveyPage('page5')">‹ Kembali</button>
+          <button type="button" class="survey-btn" id="finalSubmitBtn" onclick="submitAll()">Submit ✓</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 7: THANK YOU -->
+    <div id="page7" class="page survey-page">
+      <div class="survey-card thanks-card">
+        <div class="thanks-icon">✓</div>
+        <h2 class="survey-title">Terima kasih!</h2>
+        <p class="survey-desc" id="thanksMsg" style="margin-bottom:0;">Tanggapan Anda telah direkam.</p>
+      </div>
+    </div>
+
   </div>
   <div class="footer">
     <span>© 2026 BINUS University</span>

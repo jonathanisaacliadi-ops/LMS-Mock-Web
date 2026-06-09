@@ -6,7 +6,7 @@ let timerStopped = false;
 // Paste the Web App URL of your deployed Google Apps Script here.
 // (Apps Script editor -> Deploy -> New deployment -> Web app -> copy the /exec URL)
 // The doPost(e) code to paste into Apps Script is in google-apps-script.gs.
-const GOOGLE_SHEET_WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbz6AqQY7pE3guGJZ_ng1H13tIhz0WuoFecNy2ugD-RPrC1XfDAtwJ3z71R4GyYj7GH6fQ/exec';
+const GOOGLE_SHEET_WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbwmvXyPOpg2eY3ITHcp4lWtrjZz3b6e-Rvew-KOZWPeLNIqpAZ4wk2ZhGCMl9063I1mQw/exec';
 
 // Identifies which build this row came from (written to the "Mode" column).
 const READING_MODE = 'dark';
